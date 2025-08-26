@@ -1,0 +1,139 @@
+.contact-container-all{
+  height: 70vh;
+  width: 100%;
+  background: linear-gradient(to right, #f6fcfb, #e6f7f5);
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container{
+  display: flex;
+  width: 1200px;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+}
+
+.contact-container img{
+  width: 400px;
+}
+
+.adress-details{
+  line-height: 30px;
+}
+
+.contact-logos{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-logos a{
+  color: rgb(113, 203, 175);
+}
+
+#facebook, #insta{
+  transition: opacity .3s, color .3s;
+}
+
+#facebook:hover, #insta:hover{
+  opacity: .8;
+  cursor: pointer;
+  color: #035144;
+}
+
+.custom-list{
+  list-style: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.custom-list li{
+  position: relative;
+  margin-top: 30px;
+}
+.custom-list li::before{
+  content: '';
+  background-image: url(/images/placeholder.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  color: white;
+  left: -30px;
+  transform: translate(-50%);
+}
+
+@media (max-width: 1200px){
+  .contact-container img{
+    width: 300px;
+  }
+  .adress-details{
+    line-height: 30px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 900px){
+  .contact-container img{
+    display: none;
+  }
+  .adress-details{
+    line-height: 30px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 650px){
+  .contact-container img{
+    display: none;
+  }
+  .adress-details{
+    line-height: 30px;
+    width: 350px;
+    
+  }
+
+  .contact-container{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .contact-logos{
+    flex-direction: row;
+  }
+}
+
+
+@media (max-width: 500px){
+  .contact-container img{
+    display: none;
+  }
+  .adress-details{
+    line-height: 30px;
+    width: 350px;
+  }
+
+  .contact-container{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .contact-logos{
+    flex-direction: row;
+    margin-top: -80px;
+  }
+
+  .custom-list{
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+  }
+}
+

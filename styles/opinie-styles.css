@@ -1,0 +1,97 @@
+.opinie-container{
+  height: 80vh;
+  position: relative;
+  width: 100%;
+  background: url(/images/Opinie\ green.avif);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+.opinie-text i{
+  margin-top: 120px;
+}
+
+.opinie-container .user-logo {
+  color: white;
+}
+
+.opinie-text{
+  color: white;
+  position: relative;
+  max-width: 800px;
+  line-height: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.dots-container{
+  position: relative;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dots-container .dot{
+  height: 6px;
+  width: 6px;
+  border: white 2px solid;
+  border-radius: 50%;
+}
+
+#first{
+  background-color: white;
+}
+
+.opinie-container i {
+  color: black;
+  margin-bottom: 40px;
+}
+
+.dots-container{
+  margin-top: 20px;
+}
+
+.opinie-button{
+  margin-top: 40px;
+  margin-bottom: 150px;
+  padding: 10px 50px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: rgb(113, 203, 175);
+  cursor: pointer;
+  color: white;
+  border: none;
+  transition: color .3s, background-color .3s;
+}
+
+.opinie-button:hover{
+  color: rgb(113, 203, 175);
+  background-color: white;
+}
+
+#opinie-paragraf, #opinie-autor {
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 900px){
+  .opinie-text{
+    margin: 30px;
+  }
+}
+
+@media (max-width: 500px){
+  .opinie-text{
+    margin: 30px;
+    font-size: 14px;
+  }
+
+  
+}
+
+
